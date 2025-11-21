@@ -152,21 +152,59 @@
     </p>
   </article>
 
-  <!-- 🐱 On-chain NFT -->
-  <section class="nft-block">
-    <h2>BTCAT25K — Before the Number</h2>
-    <p>This NFT marks the beginning of the observation — a timestamp of patience before Bitcoin reaches 25 000 USD again.</p>
-    <img src="https://alive-teal-hare.myfilebase.com/ipfs/QmR65ER4TSxjKgj6c7vkWFjC7amTFnJBW84TSpGVRn7bzq" alt="BTCAT25K — Before the Number" width="400">
-    <p>
-      <a href="https://polygonscan.com/token/0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd?a=0" target="_blank">View on Polygonscan</a> |
-      <a href="https://opensea.io/assets/matic/0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd/0" target="_blank">View on OpenSea</a>
-    </p>
-  </section>
+    <!-- 🎴 NFT Visual Card -->
+  <div class="nft-card">
+    <img
+      src="https://ipfs.io/ipfs/QmR65ER4TSxjKgj6c7vkWFjC7amTFnJBW84TSpGVRn7bzq"
+      alt="BTCAT25K — Before the Number" />
+    <div class="nft-meta">
+      <h3>BTCAT25K — Before the Number</h3>
+      <p>Token ID: #0 · Polygon</p>
+      <p>
+        <a href="https://polygonscan.com/token/0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd?a=0" target="_blank">Polygonscan</a>
+        ·
+        <a href="https://opensea.io/assets/matic/0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd/0" target="_blank">OpenSea</a>
+      </p>
+    </div>
+  </div>
 
-  <footer>
-    <p>🐱 Follow the cat on X</p>
-    <p><a href="https://x.com/btcat25k" target="_blank">@btcat25k</a></p>
-  </footer>
+  <style>
+  .nft-card {
+    max-width: 420px;
+    margin: 24px auto;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,.06);
+    background: #fff;
+  }
+  .nft-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .nft-meta {
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .nft-meta h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+  }
+  .nft-meta p {
+    margin: 6px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  .nft-meta a {
+    color: #e69138;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .nft-meta a:hover {
+    text-decoration: underline;
+  }
+  </style>
 
 </body>
 </html>
