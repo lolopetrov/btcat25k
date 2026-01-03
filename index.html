@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BTCAT25K — The Cat Watches 25K</title>
+
+<meta name="description" content="BTCAT25K is a temporal observation of Bitcoin until it touches 25K before October 2026.">
+
+<meta property="og:title" content="BTCAT25K — The Cat Watches 25K">
+<meta property="og:description" content="A timestamp in motion. The cat observes Bitcoin toward 25K until October 2026.">
+<meta property="og:image" content="https://www.btctoday100k.com/assets/btcat25k.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://btcat25k.btctoday100k.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+body{font-family:Arial,system-ui;background:#faf6ef;color:#111;max-width:700px;margin:40px auto;padding:0 20px;line-height:1.6;text-align:center}
+img{max-width:260px;margin:20px auto;display:block}
+a{color:#e69138;font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline}
+article{text-align:left;margin-top:40px;padding-top:20px;border-top:1px solid #ddd;color:#333}
+ul{list-style:none;padding-left:0}
+ul li::before{content:"• "}
+footer{margin-top:60px;padding-top:20px;border-top:1px solid #ddd;font-size:13px;color:#555}
+.timer{display:inline-block;padding:14px 16px;border:1px solid #111;background:#fff;font-family:ui-monospace,monospace;font-size:18px;letter-spacing:.5px;margin-top:14px}
+</style>
+</head>
+
+<body>
+
+<img src="https://www.btctoday100k.com/assets/btcat25k.png">
+
+<h1>🐱 BTCAT25K — The Cat Watches 25K</h1>
+
+<p>A temporal observation of Bitcoin until <strong>October 2026</strong>.</p>
+<p><em>Not finance. Not a forecast. Just a timestamp in motion.</em></p>
+
+<hr style="margin:32px 0">
+
+<p><strong>Temporal observation</strong></p>
+<p>The cat does not trade. The cat observes.</p>
+
+<div class="timer">
+Time until the 25K moment:<br>
+<span id="countdown">loading…</span>
+</div>
+
+<p style="margin-top:14px">
+When it happens, this page will change.<br>
+From observation to archive.
+</p>
+
+<p>Until then, the cat waits.</p>
+
+<p>pump.fun: <a href="https://pump.fun/coin/7HDsBa4bxoca1nyXedutiFP6B39ZZDubpS4cfHgjpump">buy or watch</a></p>
+
+<article>
+<h2>Observation</h2>
+
+<p>Meme coins behave like options without expiration — they don’t die instantly, but fade by inertia.</p>
+
+<p><strong>BTCAT25K</strong> is an experiment of participation in that observation.</p>
+
+<ul>
+<li>market cycles</li>
+<li>halving structure</li>
+<li>ETF narrative control</li>
+<li>MSTR reflexivity</li>
+<li>imitators following the pattern</li>
+</ul>
+
+<p>It’s a hypothesis. Just play.</p>
+</article>
+
+<footer>
+<p>Time is the only roadmap.</p>
+</footer>
+
+<script>
+const target = new Date("2026-10-01T00:00:00Z");
+
+function tick(){
+  const now = new Date();
+  let diff = target - now;
+  if(diff < 0) diff = 0;
+
+  const d = Math.floor(diff/86400000);
+  const h = Math.floor(diff%86400000/3600000);
+  const m = Math.floor(diff%3600000/60000);
+  const s = Math.floor(diff%60000/1000);
+
+  countdown.innerText =
+    `${d}d : ${String(h).padStart(2,"0")}h : ${String(m).padStart(2,"0")}m : ${String(s).padStart(2,"0")}s`;
+}
+
+setInterval(tick,1000);
+tick();
+</script>
+
+</body>
+</html>
