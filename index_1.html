@@ -1,210 +1,270 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BTCAT25K — The Cat Watches 25K</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- 🧠 SEO + Open Graph -->
-  <meta name="description" content="BTCAT25K — a meme timestamp observing Bitcoin’s path toward 25K until October 2026.">
-  <meta property="og:title" content="BTCAT25K — The Cat Watches 25K">
-  <meta property="og:description" content="A meme timestamp experiment. The cat observes Bitcoin’s 25K level until October 2026.">
-  <meta property="og:image" content="https://www.btctoday100k.com/assets/btcat25k.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://btcat25k.btctoday100k.com">
-  <meta name="twitter:card" content="summary_large_image">
+<title>BTCAT25K — The Cat Watches 25K</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-      line-height: 1.6;
-      background-color: #faf6ef;
-      color: #111;
-    }
-    img {
-      max-width: 260px;
-      margin: 20px auto;
-      display: block;
-    }
-    a {
-      color: #e69138;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    article {
-      text-align: left;
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      color: #333;
-    }
-    article p {
-      margin-bottom: 1em;
-    }
-    ul {
-      text-align: left;
-      list-style-type: none;
-      padding-left: 0;
-      margin: 0 0 1em 0;
-    }
-    ul li::before {
-      content: "• ";
-    }
-    strong {
-      color: #000;
-    }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 0.95em;
-      color: #555;
-    }
-  </style>
+<meta name="description" content="BTCAT25K is a temporal observation of Bitcoin until it touches 25K before October 2026.">
 
-  <!-- 🧩 Schema.org metadata -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["CreativeWork", "DigitalDocument"],
-    "name": "BTCAT25K — Before the Number",
-    "alternateName": "BTCAT25K #0",
-    "creator": {
-      "@type": "Person",
-      "name": "BTCAT25K Project"
-    },
-    "description": "Before the number appears, the cat waits. Every block is a heartbeat, every day — a candle of silence. Observing Bitcoin until it touches 25 000 USD again or time runs out in October 2026.",
-    "encodingFormat": "image/png",
-    "image": "https://alive-teal-hare.myfilebase.com/ipfs/QmR65ER4TSxjKgj6c7vkWFjC7amTFnJBW84TSpGVRn7bzq",
-    "identifier": {
-      "@type": "PropertyValue",
-      "propertyID": "Polygon Token Contract",
-      "value": "0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd"
-    },
-    "isBasedOn": "https://polygonscan.com/token/0x9a463C4a84ABA35ED188F13BB8d7E235d05544fd",
-    "keywords": "BTCAT25K, NFT, Polygon, Bitcoin, observation, digital art, blockchain token",
-    "inLanguage": "en",
-    "dateCreated": "2025-11-21",
-    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-  }
-  </script>
+<meta property="og:title" content="BTCAT25K — The Cat Watches 25K">
+<meta property="og:description" content="A timestamp in motion. The cat observes Bitcoin toward 25K until October 2026.">
+<meta property="og:image" content="https://www.btctoday100k.com/assets/btcat25k.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://btcat25k.btctoday100k.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+body{
+  font-family:Arial,system-ui;
+  background:#faf6ef;
+  color:#111;
+  max-width:700px;
+  margin:40px auto;
+  padding:0 20px;
+  line-height:1.6;
+  text-align:center
+}
+
+img{
+  max-width:260px;
+  margin:20px auto;
+  display:block
+}
+
+a{
+  color:#e69138;
+  font-weight:600;
+  text-decoration:none
+}
+
+a:hover{
+  text-decoration:underline
+}
+
+article{
+  text-align:left;
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid #ddd;
+  color:#333
+}
+
+ul{
+  list-style:none;
+  padding-left:0
+}
+
+ul li::before{
+  content:"• "
+}
+
+footer{
+  margin-top:60px;
+  padding-top:20px;
+  border-top:1px solid #ddd;
+  font-size:13px;
+  color:#555
+}
+
+.timer{
+  display:inline-block;
+  padding:14px 16px;
+  border:1px solid #111;
+  background:#fff;
+  font-family:ui-monospace,monospace;
+  font-size:18px;
+  letter-spacing:.5px;
+  margin-top:14px
+}
+
+/* BTCAT25K₀ — second observation */
+.observation-zero{
+  margin:40px auto 10px;
+  padding:24px 18px;
+  max-width:420px;
+  border-top:1px solid #111;
+  border-bottom:1px solid #111;
+}
+
+.observation-zero h2{
+  font-family:ui-monospace,monospace;
+  font-size:30px;
+  margin:20px 0;
+  letter-spacing:1px;
+}
+
+.observation-zero sub{
+  font-size:.55em;
+}
+</style>
 </head>
 
 <body>
 
-  <img src="https://www.btctoday100k.com/assets/btcat25k.png" alt="BTCAT25K Logo">
+<img
+  src="https://www.btctoday100k.com/assets/btcat25k.png"
+  alt="BTCAT25K Logo"
+>
 
-  <h1>🐱 BTCAT25K — The Cat Watches 25K</h1>
+<h1>🐱 BTCAT25K — The Cat Watches 25K</h1>
+
+<p>
+  A temporal observation of Bitcoin until
+  <strong>October 2026</strong>.
+</p>
+
+<p>
+  <em>Not finance. Not a forecast. Just a timestamp in motion.</em>
+</p>
+
+<hr style="margin:32px 0">
+
+<p><strong>Temporal observation</strong></p>
+
+<p>The cat does not trade. The cat observes.</p>
+
+<div class="timer">
+  Time until the 25K moment (Oct 2026):<br>
+  <span id="countdown">loading…</span>
+</div>
+
+<hr style="margin:28px 0">
+
+<div style="
+  border:1px solid #111;
+  padding:12px 14px;
+  background:#fff;
+  display:inline-block;
+  font-family:ui-monospace,monospace;
+  letter-spacing:.5px;
+  margin-top:18px;
+">
+  <strong>MEOW 75K</strong><br>
+  A reminder of where the cycle breaks.<br>
+  25K is the memory. 75K is the echo.
+</div>
+
+
+<!-- BTCAT25K₀ -->
+<div class="observation-zero">
 
   <p>
-    A meme timestamp experiment running until <strong>October 2026</strong>.<br>
-    The only rule: the cat is waiting for Bitcoin to touch <strong>$25,000</strong>.
+    <strong>25K was the observation.</strong><br>
+    <strong>58K was the market.</strong>
   </p>
+
+  <p>The cat records the difference.</p>
+
+  <h2>BTCAT25K<sub>0</sub></h2>
 
   <p>
-    Every buy and every sell is part of the ritual.<br>
-    <em>Not finance — just a 25K meme.</em>
+    Next observation:<br>
+    <strong>November 2026.</strong> 🐱
   </p>
 
-  <p>
-    pump.fun link: <a href="https://pump.fun/coin/7HDsBa4bxoca1nyXedutiFP6B39ZZDubpS4cfHgjpump" target="_blank">buy or watch</a>
-  </p>
+</div>
 
-  <article>
-    <h2>📝 Observation</h2>
 
-    <p>
-      Meme coins behave like <strong>options without expiration</strong> —  
-      they don’t die instantly, but if they stop trading or moving, they fade by inertia.
-    </p>
+<p style="margin-top:14px">
+  When it happens, this page will change.<br>
+  From observation to archive.
+</p>
 
-    <p>
-      <strong>BTCAT25K</strong> is a similar way of observing Bitcoin around the <strong>$25K</strong> mark until October 2026.  
-      Buying a small amount — <em>50 to 100 USDC</em> — is simply a way to participate in the observation and see what happens.
-    </p>
+<p>Until then, the cat waits.</p>
 
-    <p>
-      The black cat in the logo either wins or loses — depending on how Bitcoin behaves.
-    </p>
+<p>
+  pump.fun:
+  <a
+    href="https://pump.fun/coin/7HDsBa4bxoca1nyXedutiFP6B39ZZDubpS4cfHgjpump"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    buy or watch
+  </a>
+</p>
 
-    <p>
-      <strong>CAT25K</strong> stays convinced around the $25K level:
-    </p>
+<p style="margin-top:16px">
+  🐱
+  <a
+    href="https://x.com/btcat25k"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Follow the cat on X
+  </a>
+</p>
 
-    <ul>
-      <li>the market cycles;</li>
-      <li>the halving effect;</li>
-      <li>the intention to “tame” Bitcoin through ETFs;</li>
-      <li>MSTR acting as a kind of Ponzi driver;</li>
-      <li>imitators following the same pattern — all suggesting a path toward that level.</li>
-    </ul>
 
-    <p>
-      It’s a hypothesis. Just do it as <em>play</em> — through this meme coin.
-    </p>
-  </article>
+<article>
 
-    <!-- 🎴 NFT Visual Card -->
-  <div class="nft-card">
-    <img
-      src="https://ipfs.io/ipfs/QmR65ER4TSxjKgj6c7vkWFjC7amTFnJBW84TSpGVRn7bzq"
-      alt="BTCAT25K — Before the Number" />
-    <div class="nft-meta">
-      <h3>BTCAT25K — Before the Number</h3>
-      <p>Token ID: #0 · Polygon</p>
-      <p>
-        <a href="https://polygonscan.com/token/0x9a463C4a84ABA35ED188F13BB8d7E235d0554f4d?a=0" target="_blank">Polygonscan</a>
-        ·
-        <a href="https://opensea.io/assets/matic/0x9a463C4a84ABA35ED188F13BB8d7E235d0554f4d/0" target="_blank">OpenSea</a>
-      </p>
-    </div>
-  </div>
+<h2>Observation</h2>
 
-  <style>
-  .nft-card {
-    max-width: 420px;
-    margin: 24px auto;
-    border: 1px solid #ddd;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,.06);
-    background: #fff;
+<p>
+  Meme coins behave like options without expiration —
+  they don’t die instantly, but fade by inertia.
+</p>
+
+<p>
+  <strong>BTCAT25K</strong> is an experiment of participation
+  in that observation.
+</p>
+
+<ul>
+  <li>market cycles</li>
+  <li>halving structure</li>
+  <li>ETF narrative control</li>
+  <li>MSTR reflexivity</li>
+  <li>imitators following the pattern</li>
+</ul>
+
+<p>It’s a hypothesis. Just meow play.</p>
+
+</article>
+
+
+<p style="margin-top:30px; font-size:13px; color:#666;">
+  <a
+    href="https://www.btctoday100k.com/bitcoin/analysis/statistics/2025/12/27/elementarno-watson-2.html"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Technical observation behind the cat
+  </a>
+</p>
+
+
+<footer>
+  <p>Time is the only roadmap.</p>
+</footer>
+
+
+<script>
+const target = new Date("2026-10-01T00:00:00Z");
+const countdown = document.getElementById("countdown");
+
+function tick(){
+  const now = new Date();
+  let diff = target - now;
+
+  if(diff <= 0){
+    countdown.innerText = "Observation window completed.";
+    return;
   }
-  .nft-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .nft-meta {
-    padding: 14px 16px;
-    text-align: center;
-  }
-  .nft-meta h3 {
-    margin: 0 0 6px;
-    font-size: 18px;
-  }
-  .nft-meta p {
-    margin: 6px 0;
-    color: #555;
-    font-size: 14px;
-  }
-  .nft-meta a {
-    color: #e69138;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .nft-meta a:hover {
-    text-decoration: underline;
-  }
-  </style>
+
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+
+  countdown.innerText =
+    `${d}d : ${String(h).padStart(2,"0")}h : ${String(m).padStart(2,"0")}m : ${String(s).padStart(2,"0")}s`;
+}
+
+tick();
+setInterval(tick,1000);
+</script>
 
 </body>
 </html>
